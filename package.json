@@ -1,13 +1,17 @@
 {
   "name": "toppo-base",
-  "version": "1.0.2",
-  "description": "",
+  "version": "1.0.3",
+  "description": "Base for services toppo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cubit-co/toppo-base.git"
+  },
+  "keywords": ["Toppo"],
+  "author": "Alejandro Álvarez",
   "license": "ISC",
   "dependencies": {
     "mongoose": "^5.9.3",
