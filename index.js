@@ -44,6 +44,7 @@ class BaseObject {
      * @return {object} Response object.
      */
     createResponse(body = null) {
+        if (process.env.IS_OFFLINE) return body;
         let status = Object.assign({}, SuccessResponses["SUCCESS"]);
         status.status.identifier = this.extractTraceID();
         status.status.date = this.getDate();
